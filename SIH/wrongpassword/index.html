@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Wrong Password</title>
+</head>
+<body>
+    <div class="container">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <h1>Wrong Password</h1>
+        <p>Your password is incorrect. Please try again.</p>
+        <button id="backButton" class="redirect-button">Back to Sign In</button>
+    </div>
+</body>
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const backButton = document.getElementById("backButton");
+    
+        backButton.addEventListener("click", function () {
+            // Redirect back to the sign-in page
+            window.location.href = "signin.html"; // Replace "signin.html" with your actual sign-in page URL
+        });
+    });
+    </script>
+    

@@ -1,0 +1,44 @@
+
+.login-box {
+    width: 320px;
+    padding: 40px;
+    margin: 40px auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-box h2 {
+    text-align: center;
+    color: #333;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-box {
+    position: relative;
+}
+
+.user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: 3px;
+}
+
+.user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #999;
+    pointer-events: none;
+    transition: 0.3s ease;

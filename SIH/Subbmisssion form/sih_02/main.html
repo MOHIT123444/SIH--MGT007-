@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Submission</title>
+    <style>
+        /* Your provided style code for the theme */
+        html {
+            height: 100%;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6e5e5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(#141e30, #2a6c56);
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 35rem;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.5);
+            box-sizing: border-box;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+
+        h2 {
+            margin: 0 0 30px;
+            padding: 0;
+            display: flex;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Rest of your CSS styles for the theme */
+
+        /* Your provided style code for the user input box */
+        .login-box .user-box input {
+            width: 100%;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 30px;
+            outline: none;
+            background: transparent;
+        }
+
+        .login-box .user-box label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            pointer-events: none;
+            transition: 0.5s;
+        }
+
+        .login-box .user-box input:focus~label,
+        .login-box .user-box input:valid~label {
+            top: -20px;
+            left: 0;
+            color: #03f484;
+            font-size: 12px;
+        }
+
+        .login-box .user-box select#theme {
+            width: 100%;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 30px;
+            outline: none;
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid #03f484;
+        }
+
+        .login-box .user-box select#theme {
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .login-box .user-box select#theme:focus {
+            border-bottom: 2px solid #03f484;
+        }
+
+        /* Apply theme styles to input labels and all div elements */
+        label {
+            font-size: 16px;
+            color: #fff;
+            position: absolute;
+            pointer-events: none;
+            transition: 0.5s;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 30px;
+            outline: none;
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid #03f484;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus,
+        input[type="email"]:focus,
+        textarea:focus,
+        select:focus {
+            border-bottom: 2px solid #03f484;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="submission-form">
+            <h2>Project Submission</h2>
+            <div class="input-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="project">Project Description:</label>
+                <textarea id="project" name="project" rows="4" required></textarea>
+            </div>
+            <div class="input-group">
+                <label for="theme">Select Theme:</label>
+                <select id="theme" name="theme">
+                    <option value="theme1">Theme 1</option>
+                    <option value="theme2">Theme 2</option>
+                    <option value="theme3">Theme 3</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
